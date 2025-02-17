@@ -2141,7 +2141,7 @@ PopupMenu::PopupMenu() {
 	add_child(submenu_timer, false, INTERNAL_MODE_FRONT);
 
 	minimum_lifetime_timer = memnew(Timer);
-	minimum_lifetime_timer->set_wait_time(0.3);
+	minimum_lifetime_timer->set_wait_time(0.0001);
 	minimum_lifetime_timer->set_one_shot(true);
 	minimum_lifetime_timer->connect("timeout", callable_mp(this, &PopupMenu::_minimum_lifetime_timeout));
 	add_child(minimum_lifetime_timer, false, INTERNAL_MODE_FRONT);
